@@ -1,2 +1,2 @@
 # SentralWebScraper
-Just so I can view my timetable easier
+Soon to be extension to view timetables easier
