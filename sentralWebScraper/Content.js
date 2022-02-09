@@ -1,18 +1,18 @@
-// code made by u/VirajPrateeek
-(function() {
-'use strict';
-//remove class name starting with underscore
- for(let i=0; i<10; i++){
-    document.querySelectorAll("[class^=_]")[0].className="";
+"use strict";
+let subjectArr = [];
+let subjectValue;
+for (let i = 0; i < 6; i++) {
+    subjectValue =   
+        (`${i + 1}) `
+        + document.getElementsByClassName
+        ("timetable-class")[i].getElementsByTagName
+        ('strong')[0].innerHTML 
+        + " / " 
+        + document.getElementsByClassName
+        ("timetable-class")[i].getElementsByTagName
+        ('strong')[1].innerHTML);
+        subjectArr.push(subjectValue);
+        console.log(subjectValue);
 }
-
-document.getElementsByClassName('c-cta-section c-cta-section--with-border u-spacing u-align--center u-center-block')[0].style='display:none';
-p = document.getElementsByClassName('c-cta-section c-cta-section--with-border u-spacing u-align--center u-center-block');
-for(let i = 0; i<p.length; i++){
-    p[i].style="display:none";
-}
-//another way
-var p = document.getElementsByClassName('c-answer__body')
-var c = p[0].children;
-c[c.length-1].className=""; })();
+console.log(subjectArr);
 
